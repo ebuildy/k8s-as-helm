@@ -1,5 +1,23 @@
 apiVersion: v1
 entries:
+  cronjob:
+  - apiVersion: v1
+    created: "2021-01-27T15:46:16.575040521Z"
+    description: A chart for cron jobs
+    digest: cd03cbc54a93b8eb9b22c9ad7fe9cadaf8f83f4cefa93c73b05e95f78373ff30
+    home: https://github.com/ebuildy/k8s-as-helm
+    keywords:
+    - cron
+    maintainers:
+    - name: ebuildy
+    - email: bambash256@gmail.com
+      name: bambash
+    name: cronjob
+    sources:
+    - https://github.com/ebuildy/k8s-as-helm
+    urls:
+    - https://github.com/ebuildy/k8s-as-helm/releases/download/cronjob-0.1.0/cronjob-0.1.0.tgz
+    version: 0.1.0
   networkpolicy:
   - apiVersion: v2
     appVersion: v1.0.0

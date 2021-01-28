@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   cronjob:
   - apiVersion: v1
+    created: "2021-01-28T12:04:32.363408173Z"
+    description: A chart for cron jobs
+    digest: 221cca0492466e81e238436e1f36f13a1036b6b44aff1f329f7a85b8c43235ba
+    home: https://github.com/ebuildy/k8s-as-helm
+    keywords:
+    - cron
+    maintainers:
+    - name: ebuildy
+    name: cronjob
+    sources:
+    - https://github.com/ebuildy/k8s-as-helm
+    urls:
+    - https://github.com/ebuildy/k8s-as-helm/releases/download/cronjob-0.1.2/cronjob-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v1
     created: "2021-01-27T16:18:16.992479693Z"
     description: A chart for cron jobs
     digest: 3ce5d1dca93d009b63952d438c224ddb19211b8ac022a0c4244e8dadbf8df3e7
@@ -58,4 +73,23 @@ entries:
     urls:
     - https://github.com/ebuildy/k8s-as-helm/releases/download/networkpolicy-1.1.0/networkpolicy-1.1.0.tgz
     version: 1.1.0
+  secret:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2021-01-28T12:04:32.436053657Z"
+    description: Helm Chart representing a single Secret Kubernetes API object
+    digest: 1cf56c2898a4fda1420e8ba1c820cf7ca86507723b8b5bc5f255442f3acd83c9
+    home: https://github.com/ameijer/k8s-as-helm
+    icon: https://ameijer.github.io/k8s-as-helm/icon.png
+    keywords:
+    - secret
+    - api
+    - primitives
+    maintainers:
+    - name: ameijer
+      url: https://github.com/ameijer
+    name: secret
+    urls:
+    - https://github.com/ebuildy/k8s-as-helm/releases/download/secret-1.0.5/secret-1.0.5.tgz
+    version: 1.0.5
 generated: "2021-01-22T16:12:05.370566453Z"

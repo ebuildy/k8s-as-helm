@@ -1,6 +1,7 @@
 {{- $chart_name := .Chart.Name }}
 {{- $chart_version := .Chart.Version | replace "+" "_" }}
 {{- $release_name := .Release.Name }}
+{{- $release_service := .Release.Service }}
 
 {{- range $job := .Values.jobs }}
 ---
@@ -8,8 +9,15 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: "{{ $release_name }}-{{ $job.name }}"
+  name: {{ template "cronjob.name" $ }}
+  {{- with $.Values.annotations }}
+  annotations:
+{{ toYaml . | indent 6}}
+  {{- end }}
   labels:
     chart: "{{ $chart_name }}-{{ $chart_version }}"
+    release: {{ $release_name }}
+    heritage: {{ $release_service }}
 spec:
   concurrencyPolicy: {{ $job.concurrencyPolicy }}
   failedJobsHistoryLimit: {{ $job.failedJobsHistoryLimit }}

@@ -9,6 +9,6 @@ Setup a chart name
 {{/*
 Return the appropriate apiVersion for the object
 */}}
-{{- define "apiVersion" -}}
+{{- define "secret.apiVersion" -}}
 {{- default "v1" .Values.apiVersion -}}
 {{- end -}}

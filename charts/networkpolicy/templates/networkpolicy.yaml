@@ -1,5 +1,5 @@
 kind: NetworkPolicy
-apiVersion: {{ template "apiVersion" . }}
+apiVersion: {{ template "networkpolicy.apiVersion" . }}
 metadata:
   name: {{ template "networkpolicy.name" . }}
 {{- with .Values.annotations }}

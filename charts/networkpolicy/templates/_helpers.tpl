@@ -9,6 +9,6 @@ Setup a chart name
 {{/*
 Return the appropriate apiVersion for the object
 */}}
-{{- define "apiVersion" -}}
+{{- define "networkpolicy.apiVersion" -}}
 {{- default "networking.k8s.io/v1" .Values.apiVersion -}}
 {{- end -}}

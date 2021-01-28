@@ -53,6 +53,28 @@ entries:
   networkpolicy:
   - apiVersion: v2
     appVersion: v1.0.0
+    created: "2021-01-28T14:20:45.849461203Z"
+    description: Helm Chart representing a single Network Policy Kubernetes API object
+    digest: 9f429a97ac0ccfa54e21d52a3335cc3d9a98b9defaa58a9600f69d3379640bf4
+    home: https://github.com/ebuildy/k8s-as-helm
+    icon: https://ebuildy.github.io/k8s-as-helm/icon.png
+    keywords:
+    - networkpolicy
+    - network
+    - policy
+    - api
+    - primitives
+    maintainers:
+    - name: ameijer
+      url: https://github.com/ameijer
+    - name: ebuildy
+      url: https://github.com/ebuildy
+    name: networkpolicy
+    urls:
+    - https://github.com/ebuildy/k8s-as-helm/releases/download/networkpolicy-1.1.1/networkpolicy-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: v1.0.0
     created: "2021-01-22T16:12:05.534182892Z"
     description: Helm Chart representing a single Network Policy Kubernetes API object
     digest: 49ee7180b38d09f5fd382d9004a7eac5744a8b617608c4d581a24e7b181d59e4
@@ -74,6 +96,24 @@ entries:
     - https://github.com/ebuildy/k8s-as-helm/releases/download/networkpolicy-1.1.0/networkpolicy-1.1.0.tgz
     version: 1.1.0
   secret:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2021-01-28T14:20:45.913860613Z"
+    description: Helm Chart representing a single Secret Kubernetes API object
+    digest: b2898a022f90afb1166478c3e2d1e9281db825bd35e98e0815e89d79a1567e51
+    home: https://github.com/ameijer/k8s-as-helm
+    icon: https://ameijer.github.io/k8s-as-helm/icon.png
+    keywords:
+    - secret
+    - api
+    - primitives
+    maintainers:
+    - name: ameijer
+      url: https://github.com/ameijer
+    name: secret
+    urls:
+    - https://github.com/ebuildy/k8s-as-helm/releases/download/secret-1.0.6/secret-1.0.6.tgz
+    version: 1.0.6
   - apiVersion: v2
     appVersion: v1.0.0
     created: "2021-01-28T12:04:32.436053657Z"

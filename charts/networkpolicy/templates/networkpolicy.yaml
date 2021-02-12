@@ -15,9 +15,9 @@ metadata:
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
-{{- with .Values.podSelector }}
-  podSelector:
-{{ toYaml . | indent 7 }}
+  podSelector: {{ if not .Values.podSelector }}{}{{- end -}}
+{{- if .Values.podSelector }}
+{{ toYaml .Values.podSelector | indent 4 }}
 {{- end }}
 {{- if or .Values.ingressRules .Values.egressRules }}
   policyTypes:
@@ -33,10 +33,10 @@ spec:
 {{-  range . }}
     - {{ with .selectors -}}
       to:
-{{ toYaml . | indent 7 }}
+{{ toYaml . | indent 6 }}
 {{- end }}
       ports:
-{{ toYaml .ports | indent 9 }}
+{{ toYaml .ports | indent 8 }}
 {{- end }}
 {{- end }}
 {{- with .Values.ingressRules }}
@@ -44,9 +44,9 @@ spec:
 {{-  range . }}
     - {{ with .selectors -}}
       from:
-{{ toYaml . | indent 7 }}
+{{ toYaml . | indent 6 }}
 {{- end }}
       ports:
-{{ toYaml .ports | indent 9 }}
+{{ toYaml .ports | indent 8 }}
 {{- end }}
 {{- end }}

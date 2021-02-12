@@ -53,6 +53,28 @@ entries:
   networkpolicy:
   - apiVersion: v2
     appVersion: v1.0.0
+    created: "2021-02-12T19:14:29.842252419Z"
+    description: Helm Chart representing a single Network Policy Kubernetes API object
+    digest: 64ab2de3a0f605d30194e925a01afafa0e771a99250839cdca49116bafc81175
+    home: https://github.com/ebuildy/k8s-as-helm
+    icon: https://ebuildy.github.io/k8s-as-helm/icon.png
+    keywords:
+    - networkpolicy
+    - network
+    - policy
+    - api
+    - primitives
+    maintainers:
+    - name: ameijer
+      url: https://github.com/ameijer
+    - name: ebuildy
+      url: https://github.com/ebuildy
+    name: networkpolicy
+    urls:
+    - https://github.com/ebuildy/k8s-as-helm/releases/download/networkpolicy-1.1.2/networkpolicy-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
+    appVersion: v1.0.0
     created: "2021-01-28T14:20:45.849461203Z"
     description: Helm Chart representing a single Network Policy Kubernetes API object
     digest: 9f429a97ac0ccfa54e21d52a3335cc3d9a98b9defaa58a9600f69d3379640bf4
